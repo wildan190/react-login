@@ -12,6 +12,14 @@ function App() {
 
   const Login = details => {
     console.log(details);
+
+    if (details.email == adminUser.email && details.password == adminUser.password){
+      console.log("Logged In");
+      alert("Welcome");
+    }else{
+      console.log("Details do not match");
+      alert("Data Not Found");
+    }
   }
 
   const Logout = () => {
