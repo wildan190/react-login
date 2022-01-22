@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import LoginForm from './components/LoginForm';
 
 function App() {
   const adminUser = {
@@ -24,7 +25,7 @@ function App() {
           <button>Logout</button>
         </div>
       ) : (
-        <LoginForm />
+        <LoginForm Login={Login} error={error} />
       )}
     </div>
   );
